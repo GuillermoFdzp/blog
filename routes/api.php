@@ -7,6 +7,7 @@ use App\Http\Controllers\api\RolController;
 use Illuminate\Http\Request;
 
 Route::apiResource('usuario',UsuarioController::class);
+Route::get('usuario/{id}/perfil',[UsuarioController::class, 'showPerfil']);
 
 Route::apiResource('perfil',PerfilController::class);
 
